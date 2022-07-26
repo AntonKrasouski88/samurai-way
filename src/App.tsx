@@ -1,20 +1,17 @@
 import React from 'react';
 import './App.css';
-import LogoSamuraiWay from "./img/way-of-the-samurai.jpg"
+import {Header} from "./Components/Header";
+import {Navbar} from "./Components/Navbar";
+import {Profile} from "./Components/Profile";
 
 function App() {
     return (
-        <div className={"app-wrapper"}>
-            <header>
-                <img src={LogoSamuraiWay} alt={"logo_way_of_the_samurai"}/>
-            </header>
-            <nav>
-                <div>Profile</div>
-                <div>Messages</div>
-            </nav>
-            <div>Main content</div>
+        <div className={"app-container"}>
+            <Header/>
+            <Navbar/>
+            <Profile/>
         </div>
     );
 }
 
-    export default App;
+export default App;
