@@ -1,0 +1,9 @@
+.header {
+    grid-area: 1/ 1/ span 1/ span 4;
+    background-color: aquamarine;
+}
+.header_logo {
+    width: 80px;
+    border-radius: 100%;
+    background-color: azure;
+}
