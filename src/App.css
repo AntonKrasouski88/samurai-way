@@ -5,23 +5,3 @@
     padding: 10px;
 }
 
-.nav_main {
-    grid-area: 2 / 1 / span 1 / span 1;
-    background-color: aqua;
-}
-
-.content {
-    grid-area: 2 / 2 / span 1 / span 3;
-    background-color: aqua;
-}
-.content_img-upper  {
-    background-image: url("./img/img_content.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-.content_user-logo {
-    grid-area: 2 / 2 / span 1 / span 3;
-    width: 200px;
-}
