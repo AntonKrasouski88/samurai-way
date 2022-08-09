@@ -1,17 +1,9 @@
-.nav_main {
-    grid-area: 2 / 1 / span 1 / span 1;
-    background-color: #6eccb1;
-}
-.item {
-    margin-top: 10px;
-    padding-left: 20px;;
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
 
-.item a {
-    color: white;
-    text-decoration: none;
+.dialogsItems {
+    padding: 10px;
 }
 
-.item a.active {
-    color: gold;
-}

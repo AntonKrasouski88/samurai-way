@@ -1,7 +1,11 @@
-.app-container {
+.app_container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     padding: 10px;
 }
 
+.app_container_content {
+    grid-area: 2 / 2 / span 1 / span 3;
+    background-color: #6eccb1;
+}

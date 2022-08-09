@@ -1,29 +1,33 @@
 import React from 'react';
+import s from './Dialogs.module.css'
+import {Dialog} from "./Item/Dialog";
+import {Message} from "./Message/Message";
+
 
 export const Dialogs = () => {
+
+    let dialogs = [
+        {id:1, name: "Dimcho"},
+        {id:2, name: "Albert"},
+        {id:3, name: "Tanya"},
+        {id:4, name: "Ilan"},
+    ]
+
+    let messages = [
+        {id: 1, letter: "What's up bro"},
+        {id: 2, letter: "How are your it-kamasutra?"},
+        {id: 3, letter: "What do yuo do?"},
+    ]
+
     return (
-        <div>
-            <div className={'dialogs'}>
-            <div className={'dialogs-item'}>
-                <div className={'dialog'}>
-                    Dimych
-                </div>
-                <div className={'dialog'}>
-                    Albert
-                </div>
-                <div className={'dialog'}>
-                    Tanya
-                </div>
-                <div className={'dialog'}>
-                    Ilan
-                </div>
+        <div className={s.dialogs}>
+            <div className={s.dialogsItem}>
+                <Dialog dialogs = {dialogs}/>
+            </div>
+            <div className={s.messages}>
+                <Message messages={messages} />
             </div>
         </div>
-            <div className={'messages'}>
-                <div className={'message'}>What's up bro </div>
-                <div className={'message'}>How are your it-kamasutra?</div>
-                <div className={'message'}>What do yuo do?</div>
-            </div>
-        </div>
+
     );
 };
