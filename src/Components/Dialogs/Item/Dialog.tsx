@@ -1,14 +1,10 @@
 import React from 'react';
 import s from './Dialog.module.css'
 import {NavLink} from "react-router-dom";
+import { DialogsType } from '../../../App';
 
 type DialogPropsType = {
-    dialogs: Array<dialogsType>,
-}
-
-type dialogsType = {
-    name: string;
-    id: number;
+    dialogs: Array<DialogsType>;
 }
 
 

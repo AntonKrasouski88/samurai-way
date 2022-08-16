@@ -1,15 +1,18 @@
 import React from 'react';
-import User_logo from "../../img/User_samurai.png";
-import prof from "./Profile.module.css"
+import prof from "./Profile.module.css";
 import {MyPost} from "./MyPost/MyPost";
+import { ProfileInfo } from './ProfileInfo/ProfileInfo';
+import {PostDataType} from './../../App' 
 
-export const Profile = () => {
+type ProfilePropsType = {
+    postData: Array<PostDataType>;
+}
+
+export const Profile = (props: ProfilePropsType) => {
     return (
         <div className={prof.content}>
-            <div className={prof.content_img}></div>
-            <div><img className={prof.content_user_logo} src={User_logo} alt={"content_user-logo"}/></div>
-            <div>Inf user</div>
-            <MyPost/>
+            <ProfileInfo/>
+            <MyPost postData={props.postData}/>
         </div>
     );
 };

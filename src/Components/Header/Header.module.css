@@ -1,12 +1,7 @@
 .header {
-    grid-area: 1/ 1/ span 1/ span 4;
-    background-color: #6eccb1;
-}
-.header_logo {
-    width: 120px;
-    border-radius: 20%;
-    background-color: azure;
-    margin-left: 30px;
+    grid-column: 2 /span 3;
+    background-color: #d8e0de;
+    height: 150px;
 }
 
 .search {

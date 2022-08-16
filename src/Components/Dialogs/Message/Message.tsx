@@ -1,13 +1,9 @@
 import React from 'react';
+import { MessagesType } from '../../../App';
 import s from "./Message.module.css";
 
 type MessagePropsType = {
-    messages: Array<messages>
-}
-
-type messages = {
-    id: number;
-    letter: string;
+    messages: Array<MessagesType>;
 }
 
 export const Message = (props: MessagePropsType) => {

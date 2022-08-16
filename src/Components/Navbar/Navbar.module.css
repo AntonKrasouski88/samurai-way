@@ -1,6 +1,6 @@
 .nav_main {
-    grid-area: 2 / 1 / span 1 / span 1;
-    background-color: #6eccb1;
+    grid-area: 1 / 1 / span 3;
+    background-color: #358080;
 }
 .item {
     margin-top: 10px;
@@ -14,4 +14,16 @@
 
 .item a.active {
     color: gold;
+}
+
+.header_logo {
+    width: 120px;
+    border-radius: 20%;
+    background-color: azure;
+    margin-left: 30px;
+}
+
+nav {
+    margin-top: 50px;
+    margin-left: 50px;
 }
