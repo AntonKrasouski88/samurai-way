@@ -1,10 +1,12 @@
 import React from 'react';
 import {Post} from "./Post/Post";
 import mp from './MyPost.module.css'
-import {PostDataType} from './../../../App' 
+import { StateType } from '../../../redux/state';
+
+
 
 type MyPostPropsType = {
-    postData: Array<PostDataType>
+    postData: StateType
 }
 
 

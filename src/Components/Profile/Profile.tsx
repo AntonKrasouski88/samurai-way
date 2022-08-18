@@ -2,10 +2,11 @@ import React from 'react';
 import prof from "./Profile.module.css";
 import {MyPost} from "./MyPost/MyPost";
 import { ProfileInfo } from './ProfileInfo/ProfileInfo';
-import {PostDataType} from './../../App' 
+import { StateType } from '../../redux/state';
+
 
 type ProfilePropsType = {
-    postData: Array<PostDataType>;
+    postData: StateType
 }
 
 export const Profile = (props: ProfilePropsType) => {

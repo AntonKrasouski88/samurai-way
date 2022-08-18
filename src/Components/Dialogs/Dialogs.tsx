@@ -1,18 +1,17 @@
 import React from 'react';
-import { DialogsType, MessagesType } from '../../App';
 import s from './Dialogs.module.css'
 import {Dialog} from "./Item/Dialog";
 import {Message} from "./Message/Message";
+import {StateType} from './../../redux/state'
 
 type DialogsPropsType = {
-    dialogs: Array<DialogsType>;
-    messages: Array<MessagesType>;
+    dialogs: StateType;
+    messages: StateType;
 }
 
 
-export const Dialogs = (props:DialogsPropsType) => {
 
- 
+export const Dialogs = (props:DialogsPropsType) => {
 
     return (
         <div className={s.dialogs}>

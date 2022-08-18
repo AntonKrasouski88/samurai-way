@@ -1,15 +1,14 @@
 import React from 'react';
 import s from './Dialog.module.css'
 import {NavLink} from "react-router-dom";
-import { DialogsType } from '../../../App';
+import {StateType} from './../../../redux/state'
 
 type DialogPropsType = {
-    dialogs: Array<DialogsType>;
+    dialogs: StateType
 }
 
-
-export const Dialog = (props: DialogPropsType) => {
-    let dialog = props.dialogs.map((d => <div>
+export const Dialog  = (props:DialogPropsType) => {
+    let dialog = props.dialogs.dialogsPage.dialogs.map((d => <div>
         <NavLink to={`/dialogs/${d.id}`}>{d.name}</NavLink>
     </div>))
 

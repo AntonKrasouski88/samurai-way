@@ -1,15 +1,16 @@
 import React from 'react';
 import logo_post from "../../../../img/Cosmic_light.png";
+import { StateType } from '../../../../redux/state';
 import post from './Post.module.css';
-import {PostDataType} from './../../../../App' 
+
 
 type PostType = {
-    postData: Array<PostDataType>
+    postData: StateType
 }
 
 export const Post = (props: PostType) => {
 
-    const sortMessageLike = props.postData.map (i => {
+    const sortMessageLike = props.postData.profilePage.postData.map (i => {
         return (
             <div className={post.item}>
                     <img src={logo_post} alt={"logo_post"}/>
